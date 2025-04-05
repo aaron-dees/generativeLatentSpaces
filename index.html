@@ -17,119 +17,164 @@
 
 
 
-    <div class='section'>
-        <h1>DDSP-SFX: Acoustically-guided sound effects generation with DDSP</h1>
-        <div class="author-section">
+  <div class='section'>
+    <h1>Generative Latent Spaces for Neural Snythesis of Audio Textures - Audio Samples</h1>
+    <div class="author-section">
+        <span class="author-block">
+            Aaron Dees,</span>
             <span class="author-block">
-                Yunyi Liu<sup>1,2*</sup>,</span>
-                <span class="author-block">
-                Craig Jin, <sup>1</sup></span>
-                <span class="author-block">
-                David Gunawan<sup>2</sup>
-                </span>
-        </div>
-        <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Sydney<br><sup>2</sup>Dolby Laboratories, Inc</span>
-            <span class="eql-cntrb"><small><br><sup>*</sup>Work done while interning at Dolby</small></span>
-          </div>
+            Sean O'Leary</span>
+    </div>
+    <div class="is-size-5 publication-authors">
+        <span class="author-block">Technological University of Dublin</span>
+</div>
 
-        <img src="images/Architecture.png" alt="Description of the image" class="author-image">
-
-
-        <p>Deep audio generative networks typically require large amounts of data and computational resources, while relying on 
-            excessive descriptive ground-truth labels to guide the sound generation. Differentiable digital signal processing(DDSP) 
-            is a variant of neural audio synthesis models that employ digital signal processing modules as part of the neural network architecture. 
-            By incorporating pre-processed audio features as conditioning vectors along with pre-written digital synthesizers it is capable of 
-            synthesizing high-quality musical audio and controlling the acoustic characteristics(pitch and loudness) of the sounds. However, 
-            due to the limitation of its design, DDSP has its weaknesses in synthesizing impulsive signals and providing nuanced control over the
-            complex timbres of the sound effects. To this end we incorporate Verma's method to synthesize impulsive signals into the DDSP architecture.
-            Below we show the performance of sound synthesized from DDSP and our approach, DDSP-SFX. We use a reference sound effect and perform timbre transfer
-            by extracting the required audio features as input to the decoder. 
-            
-        </p>
+<p>
+In this paper we evaluate and investigate the audio texture synthesis capabilities and generative latent spaces of two paradigms in neural audio synthesis, using Variational Autoencoders (VAEs). We introduce datasets for three categories of environmental sounds for use in machine learning. We propose VAE frameworks with fine grained temporal control, for both DSP-inspired and data driven approaches to neural audio synthesis, of audio textures. We evaluate and compare the the models synthesis capabilities via objective metrics. We investigate the expressive and generative capabilities of each of the models through latent space navigation and interpolations.
+</p>
+        
     </div>
 
     <hr>
 
-    <h1 class="section-title">Transient Modelling</h1>
-    <div class='section'>
-    <figure class="image">
-        <img src="images/Transient model.png" alt="Description 1">
+        <h1 class="section-title">Reconstruction - Sub-category Datasets</h1>
 
-        In the preprocessing stage, we extract a guiding amplitude vector from the target sound effects following the steps as shown above: computing STFT, performing a 
-        harmonic-percussive source separation of the signal, computing the spectral peak of the percussive signal, and then getting the amplitude vector of the place 
-        where it detects a spectral peak. The decoder uses this information to output the required amplitude and frequency for the sinusoidal modelling in the DCT domain.
-        Once the sinusoids are synthesized, we convert them to time domain using IDCT, which would result in various kinds of transient signals in different time frames.
-        </div>
-
-    <h1 class="section-title">Synthesis results</h1>
-
-    <div class="section">
-        <p>Below we show our synthesis results. We use some reference SFX tracks as guiding sounds and extract their acoustic features including fundamental frequency, 
-            amplitude, transient components, and mel-spectrograms. We fed these features into our model to perform timbre transfer. Ideally the generated sound should be 
-            identical or close to the reference soundtrack. 
-            </p>
-        </div>
-
-    <!-- Gunshots section -->
-    <h2 class="section-title">Gunshots</h2>
-
-    <div class="column-section">
-        <!-- Column 1 -->
-        <div class="column">
-            <h4 class="title is-4">Reference</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Gunshots/037.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Gunshots/037.png" alt="Description 1">
-            </figure>
-            <h4 class="title is-4">Reference</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Gunshots/048.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Gunshots/048.png" alt="Description 1">
-            </figure>
-        </div>
-        
+        <div class="section">
+            <p>Here we show reconstruction results for models trained individually on each sub-category dataset</p>
+            </div>
     
-        <!-- Column 2 -->
-        <div class="column">
-            <h4 class="title is-4">DDSP</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Gunshots/DDSP_037.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Gunshots/ddsp-037.png" alt="Description 2">
-            </figure>
-            <h4 class="title is-4">DDSP</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Gunshots/DDSP_048.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Gunshots/ddsp-048.png" alt="Description 2">
-            </figure>
-        </div>
-    
-        <!-- Column 3 -->
-        <div class="column">
-            <h4 class="title is-4">DDSP-SFX</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Gunshots/DDSP-VAE_037.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Gunshots/ddsp-vae-037.png" alt="Description 3">
-            </figure>
-            <h4 class="title is-4">DDSP-SFX</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Gunshots/DDSP-VAE_048.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="Description 3">
-            </figure>
-        </div>
-    </div>
+        <!-- Gunshots section -->
+        <!-- <h2 class="section-title">Gunshots</h2> -->
+  
+      <div class="column-section">
+          <!-- Column 1 -->
+          <div class="column">
+              <h4 class="title is-4">Reference - Sea Waves</h4>
+              <audio preload='metadata' controls>
+                  <source src='samples/reconstructions/seaWaves_dataset/original.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="Reconstruction/Gunshots/037.png" alt="Description 1">
+              </figure>
+              <h4 class="title is-4">Reference - Rain</h4>
+              <audio preload='metadata' controls>
+                  <source src='samples/reconstructions/rain_dataset/original.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="Reconstruction/Gunshots/048.png" alt="Description 1">
+              </figure>
+              <h4 class="title is-4">Reference - Thunder</h4>
+              <audio preload='metadata' controls>
+                  <source src='samples/reconstructions/thunder_dataset/original.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="Reconstruction/Gunshots/048.png" alt="Description 1">
+              </figure>
+          </div>
+          
+      
+          <!-- Column 2 -->
+          <div class="column">
+              <h4 class="title is-4">VAE-DDSP-NF</h4>
+              <audio preload='metadata' controls>
+                  <source src='samples/reconstructions/seaWaves_dataset/ddsp_recon.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="Reconstruction/Gunshots/ddsp-037.png" alt="Description 2">
+              </figure>
+              <h4 class="title is-4">VAE-DDSP-NF</h4>
+              <audio preload='metadata' controls>
+                  <source src='samples/reconstructions/rain_dataset/ddsp_recon.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="samples/reconstructions/thunder_dataset/ddsp_recon.wav" alt="Description 2">
+              </figure>
+              <h4 class="title is-4">VAE-DDSP-NF</h4>
+              <audio preload='metadata' controls>
+                  <source src='samples/reconstructions/thunder_dataset/ddsp_recon.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="Reconstruction/Gunshots/048.png" alt="Description 1">
+              </figure>
+          </div>
+      
+          <!-- Column 3 -->
+          <div class="column">
+              <h4 class="title is-4">VAE-NoiseBand</h4>
+              <audio preload='metadata' controls>
+                  <source src='samples/reconstructions/seaWaves_dataset/noisebandnet_recon.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="Reconstruction/Gunshots/ddsp-vae-037.png" alt="Description 3">
+              </figure>
+              <h4 class="title is-4">VAE-NoiseBand</h4>
+              <audio preload='metadata' controls>
+                  <source src='samples/reconstructions/rain_dataset/noisebandnet_recon.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="Description 3">
+              </figure>
+              <h4 class="title is-4">VAE-NoiseBand</h4>
+              <audio preload='metadata' controls>
+                  <source src='samples/reconstructions/thunder_dataset/noisebandnet_recon.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="Reconstruction/Gunshots/048.png" alt="Description 1">
+              </figure>
+          </div>
+  
+          <!-- Column 4 -->
+          <div class="column">
+              <h4 class="title is-4">VAE-EnCodec<sub>16</sub></h4>
+              <audio preload='metadata' controls>
+                  <source src='Reconstruction/Gunshots/DDSP-VAE_037.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="Reconstruction/Gunshots/ddsp-vae-037.png" alt="Description 3">
+              </figure>
+              <h4 class="title is-4">VAE-EnCodec<sub>16</sub></h4>
+              <audio preload='metadata' controls>
+                  <source src='Reconstruction/Gunshots/DDSP-VAE_048.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="Description 3">
+              </figure>
+              <h4 class="title is-4">VAE-EnCodec<sub>16</sub></h4>
+              <audio preload='metadata' controls>
+                  <source src='Reconstruction/Gunshots/DDSP-VAE_048.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="Description 3">
+              </figure>
+          </div>
+  
+          <!-- Column 5 -->
+          <div class="column">
+              <h4 class="title is-4">VAE-EnCodec<sub>128</sub></h4>
+              <audio preload='metadata' controls>
+                  <source src='Reconstruction/Gunshots/DDSP-VAE_037.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="Reconstruction/Gunshots/ddsp-vae-037.png" alt="Description 3">
+              </figure>
+              <h4 class="title is-4">VAE-EnCodec<sub>128</sub></h4>
+              <audio preload='metadata' controls>
+                  <source src='Reconstruction/Gunshots/DDSP-VAE_048.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="Description 3">
+              </figure>
+              <h4 class="title is-4">VAE-EnCodec<sub>128</sub></h4>
+              <audio preload='metadata' controls>
+                  <source src='Reconstruction/Gunshots/DDSP-VAE_048.wav' type='audio/wav'>
+              </audio>
+              <figure class="image">
+                  <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="Description 3">
+              </figure>
+          </div>
+      </div>
+
+   
 
 
     <!-- Footsteps section -->
