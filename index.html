@@ -194,18 +194,99 @@
       <p>
         Here we show reconstruction results
       </p>
-      <div class='playlist'>
-        <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/rain/rain_orig.mp3' type='audio/mpeg'></audio></div>
-        <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/rain/rain_orig.mp3' type='audio/mpeg'></audio></div>
-        <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/rain/rain_orig.mp3' type='audio/mpeg'></audio></div>
-        <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/rain/rain_orig.mp3' type='audio/mpeg'></audio></div>
-        <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/rain/rain_orig.mp3' type='audio/mpeg'></audio></div>
-        <!-- <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_unconditional/sample-1.mp3' type='audio/mpeg'></audio></div>
-        <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_unconditional/sample-2.mp3' type='audio/mpeg'></audio></div>
-        <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_unconditional/sample-3.mp3' type='audio/mpeg'></audio></div>
-        <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_unconditional/sample-4.mp3' type='audio/mpeg'></audio></div>
-        <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_unconditional/sample-5.mp3' type='audio/mpeg'></audio></div> -->
-      </div>
+
+    <div class="column-section">
+        <!-- Column 1 -->
+        <div class="column">
+            <h4 class="title is-4">Reference</h4>
+            <audio preload='metadata' controls>
+                <source src='Reconstruction/Gunshots/037.wav' type='audio/wav'>
+            </audio>
+            <figure class="image">
+                <img src="Reconstruction/Gunshots/037.png" alt="Description 1">
+            </figure>
+            <h4 class="title is-4">Reference</h4>
+            <audio preload='metadata' controls>
+                <source src='Reconstruction/Gunshots/048.wav' type='audio/wav'>
+            </audio>
+            <figure class="image">
+                <img src="Reconstruction/Gunshots/048.png" alt="Description 1">
+            </figure>
+        </div>
+        
+    
+        <!-- Column 2 -->
+        <div class="column">
+            <h4 class="title is-4">VAE-DDSP-NF</h4>
+            <audio preload='metadata' controls>
+                <source src='Reconstruction/Gunshots/DDSP_037.wav' type='audio/wav'>
+            </audio>
+            <figure class="image">
+                <img src="Reconstruction/Gunshots/ddsp-037.png" alt="Description 2">
+            </figure>
+            <h4 class="title is-4">VAE-DDSP-NF</h4>
+            <audio preload='metadata' controls>
+                <source src='Reconstruction/Gunshots/DDSP_048.wav' type='audio/wav'>
+            </audio>
+            <figure class="image">
+                <img src="Reconstruction/Gunshots/ddsp-048.png" alt="Description 2">
+            </figure>
+        </div>
+    
+        <!-- Column 3 -->
+        <div class="column">
+            <h4 class="title is-4">VAE-NoiseBand</h4>
+            <audio preload='metadata' controls>
+                <source src='Reconstruction/Gunshots/DDSP-VAE_037.wav' type='audio/wav'>
+            </audio>
+            <figure class="image">
+                <img src="Reconstruction/Gunshots/ddsp-vae-037.png" alt="Description 3">
+            </figure>
+            <h4 class="title is-4">VAE-NoiseBand</h4>
+            <audio preload='metadata' controls>
+                <source src='Reconstruction/Gunshots/DDSP-VAE_048.wav' type='audio/wav'>
+            </audio>
+            <figure class="image">
+                <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="Description 3">
+            </figure>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="column">
+            <h4 class="title is-4">VAE-EnCodec<sub>16</sub></h4>
+            <audio preload='metadata' controls>
+                <source src='Reconstruction/Gunshots/DDSP-VAE_037.wav' type='audio/wav'>
+            </audio>
+            <figure class="image">
+                <img src="Reconstruction/Gunshots/ddsp-vae-037.png" alt="Description 3">
+            </figure>
+            <h4 class="title is-4">DDSP-SFX</h4>
+            <audio preload='metadata' controls>
+                <source src='Reconstruction/Gunshots/DDSP-VAE_048.wav' type='audio/wav'>
+            </audio>
+            <figure class="image">
+                <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="Description 3">
+            </figure>
+        </div>
+
+        <!-- Column 5 -->
+        <div class="column">
+            <h4 class="title is-4">VAE-EnCodec<sub>128</sub></h4>
+            <audio preload='metadata' controls>
+                <source src='Reconstruction/Gunshots/DDSP-VAE_037.wav' type='audio/wav'>
+            </audio>
+            <figure class="image">
+                <img src="Reconstruction/Gunshots/ddsp-vae-037.png" alt="Description 3">
+            </figure>
+            <h4 class="title is-4">DDSP-SFX</h4>
+            <audio preload='metadata' controls>
+                <source src='Reconstruction/Gunshots/DDSP-VAE_048.wav' type='audio/wav'>
+            </audio>
+            <figure class="image">
+                <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="Description 3">
+            </figure>
+        </div>
+    </div>
 
     </div>
   </div>

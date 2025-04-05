@@ -171,5 +171,38 @@ body {
   margin-top: 30px;
 }
 
+.flex-row-container {
+  display: flex;
+  align-items: center; /* To vertically align the description with the columns */
+  margin-bottom: 20px; /* Spacing between rows, adjust as needed */
+}
+
+.row-description {
+  flex: 1; /* Adjust this if you want the description to take more or less space */
+  padding-right: 20px; /* Space between the description and the columns */
+}
+
+.column-section {
+  display: flex;
+  justify-content: space-around;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 1;
+  max-width: calc(33.33% - 20px); /* Assuming there's some gap between columns */
+  text-align: center;
+}
+
+audio {
+  width: 100%;
+  max-width: 300px;
+}
+
+.image img {
+  width: 100%;  /* this means the image will take up 50% of its parent's width */
+}
+
 
 
