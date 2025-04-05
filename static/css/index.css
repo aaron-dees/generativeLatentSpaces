@@ -78,9 +78,9 @@ body {
     text-decoration: underline;
 }
 
-.author-block {
+/* .author-block {
   display: inline-block;
-}
+} */
 
 .publication-banner img {
 }
@@ -202,6 +202,27 @@ audio {
 
 .image img {
   width: 100%;  /* this means the image will take up 50% of its parent's width */
+}
+
+.author-section {
+  font-size: 30px; /* or whatever size you prefer */
+  margin-bottom: 10px; /* space between the author section and the next content */
+  font-style: italic; /* optional if you want the font to be italic */
+  color: rgb(100, 100, 100); /* a lighter shade of text color, change it based on your preference */
+  text-align: center;
+}
+.author-section a {
+  color: rgb(68, 128, 200); /* the color of the author link */
+}
+
+.author-block {
+  display: inline-block;
+  text-align: center; 
+}
+
+.publication-authors {
+  font-family: 'Google Sans', sans-serif;
+  text-align: center; 
 }
 
 
