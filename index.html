@@ -174,436 +174,210 @@ In this paper we evaluate and investigate the audio texture synthesis capabiliti
           </div>
       </div>
 
-   
+      <h1 class="section-title">Reconstrucion - Combined Dataset</h1>
 
-
-    <!-- Footsteps section -->
-    <h2 class="section-title">Footsteps</h2>
+      <div class="section">
+          <p>Here we show reconstruction results for models trained using the combined dataset.</p>
+          </div>
 
     <div class="column-section">
         <!-- Column 1 -->
         <div class="column">
-            <h4 class="title is-4">Reference</h4>
+            <h4 class="title is-4">Reference - Sea Waves</h4>
             <audio preload='metadata' controls>
-                <source src='Reconstruction/Footsteps/1.wav' type='audio/wav'>
+                <source src='samples/reconstructions/seaWaves_dataset/original.wav' type='audio/wav'>
             </audio>
             <figure class="image">
-                <img src="Reconstruction/Footsteps/1.png" alt="Description 1">
+                <img src="Reconstruction/Gunshots/037.png" alt="Description 1">
             </figure>
-            <h4 class="title is-4">Reference</h4>
+            <h4 class="title is-4">Reference - Rain</h4>
             <audio preload='metadata' controls>
-                <source src='Reconstruction/Footsteps/2.wav' type='audio/wav'>
+                <source src='samples/reconstructions/rain_dataset/original.wav' type='audio/wav'>
             </audio>
             <figure class="image">
-                <img src="Reconstruction/Footsteps/2.png" alt="Description 1">
+                <img src="Reconstruction/Gunshots/048.png" alt="Description 1">
             </figure>
-            <h4 class="title is-4">Reference</h4>
+            <h4 class="title is-4">Reference - Thunder</h4>
             <audio preload='metadata' controls>
-                <source src='Reconstruction/Footsteps/3.wav' type='audio/wav'>
+                <source src='samples/reconstructions/thunder_dataset/original.wav' type='audio/wav'>
             </audio>
             <figure class="image">
-                <img src="Reconstruction/Footsteps/3.png" alt="Description 1">
+                <img src="Reconstruction/Gunshots/048.png" alt="Description 1">
             </figure>
         </div>
         
     
         <!-- Column 2 -->
         <div class="column">
-            <h4 class="title is-4">DDSP</h4>
+            <h4 class="title is-4">VAE-DDSP-NF</h4>
             <audio preload='metadata' controls>
-                <source src='Reconstruction/Footsteps/ddsp-1.wav' type='audio/wav'>
+                <source src='samples/reconstructions/seaWaves_dataset/ddsp_recon.wav' type='audio/wav'>
             </audio>
             <figure class="image">
-                <img src="Reconstruction/Footsteps/ddsp-1.png" alt="Description 2">
+                <img src="Reconstruction/Gunshots/ddsp-037.png" alt="Description 2">
             </figure>
-            <h4 class="title is-4">DDSP</h4>
+            <h4 class="title is-4">VAE-DDSP-NF</h4>
             <audio preload='metadata' controls>
-                <source src='Reconstruction/Footsteps/ddsp-2.wav' type='audio/wav'>
+                <source src='samples/reconstructions/rain_dataset/ddsp_recon.wav' type='audio/wav'>
             </audio>
             <figure class="image">
-                <img src="Reconstruction/Footsteps/ddsp-2.png" alt="Description 2">
+                <img src="samples/reconstructions/thunder_dataset/ddsp_recon.wav" alt="Description 2">
             </figure>
-            <h4 class="title is-4">DDSP</h4>
+            <h4 class="title is-4">VAE-DDSP-NF</h4>
             <audio preload='metadata' controls>
-                <source src='Reconstruction/Footsteps/ddsp-3.wav' type='audio/wav'>
+                <source src='samples/reconstructions/thunder_dataset/ddsp_recon.wav' type='audio/wav'>
             </audio>
             <figure class="image">
-                <img src="Reconstruction/Footsteps/ddsp-3.png" alt="Description 2">
-            </figure>
-        </div>
-    
-        <!-- Column 3 -->
-        <div class="column">
-            <h4 class="title is-4">DDSP-SFX</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Footsteps/ddspvae-1.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Footsteps/ddsp-vae-1.png" alt="Description 3">
-            </figure>
-            <h4 class="title is-4">DDSP-SFX</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Footsteps/ddspvae-2.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Footsteps/ddsp-vae-2.png" alt="Description 3">
-            </figure>
-            <h4 class="title is-4">DDSP-SFX</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Footsteps/ddspvae-3.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Footsteps/ddsp-vae-3.png" alt="Description 3">
-            </figure>
-        </div>
-    </div>
-    
-
-    <!-- Motors section -->
-    <h2 class="section-title">Motors</h2>
-
-    <div class="column-section">
-        <!-- Column 1 -->
-        <div class="column">
-            <h4 class="title is-4">Reference</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Motors/1.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Motors/1.png" alt="Description 1">
-            </figure>
-            <h4 class="title is-4">Reference</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Motors/2.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Motors/2.png" alt="Description 1">
-            </figure>
-            <h4 class="title is-4">Reference</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Motors/3.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Motors/3.png" alt="Description 1">
-            </figure>
-        </div>
-        
-    
-        <!-- Column 2 -->
-        <div class="column">
-            <h4 class="title is-4">DDSP</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Motors/DDSP-1.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Motors/DDSP-1.png" alt="Description 2">
-            </figure>
-            <h4 class="title is-4">DDSP</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Motors/DDSP-2.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Motors/DDSP-2.png" alt="Description 2">
-            </figure>
-            <h4 class="title is-4">DDSP</h4>
-            <audio preload='metadata' controls>
-                <source src='Reconstruction/Motors/DDSP-3.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Reconstruction/Motors/DDSP-3.png" alt="Description 2">
+                <img src="Reconstruction/Gunshots/048.png" alt="Description 1">
             </figure>
         </div>
     
         <!-- Column 3 -->
         <div class="column">
-            <h4 class="title is-4">DDSP-SFX</h4>
+            <h4 class="title is-4">VAE-NoiseBand</h4>
             <audio preload='metadata' controls>
-                <source src='Reconstruction/Motors/DDSP-VAE_1.wav' type='audio/wav'>
+                <source src='samples/reconstructions/seaWaves_dataset/noisebandnet_recon.wav' type='audio/wav'>
             </audio>
             <figure class="image">
-                <img src="Reconstruction/Motors/DDSP-VAE_1.png" alt="Description 3">
+                <img src="Reconstruction/Gunshots/ddsp-vae-037.png" alt="Description 3">
             </figure>
-            <h4 class="title is-4">DDSP-SFX</h4>
+            <h4 class="title is-4">VAE-NoiseBand</h4>
             <audio preload='metadata' controls>
-                <source src='Reconstruction/Motors/DDSP-VAE_2.wav' type='audio/wav'>
+                <source src='samples/reconstructions/rain_dataset/noisebandnet_recon.wav' type='audio/wav'>
             </audio>
             <figure class="image">
-                <img src="Reconstruction/Motors/DDSP-VAE_2.png" alt="Description 3">
+                <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="Description 3">
             </figure>
-            <h4 class="title is-4">DDSP-SFX</h4>
+            <h4 class="title is-4">VAE-NoiseBand</h4>
             <audio preload='metadata' controls>
-                <source src='Reconstruction/Motors/DDSP-VAE_3.wav' type='audio/wav'>
+                <source src='samples/reconstructions/thunder_dataset/noisebandnet_recon.wav' type='audio/wav'>
             </audio>
             <figure class="image">
-                <img src="Reconstruction/Motors/DDSP-VAE_3.png" alt="Description 3">
+                <img src="Reconstruction/Gunshots/048.png" alt="Description 1">
             </figure>
         </div>
-    </div>
-    <div class="section">
-        <p>Above we could see that for impulsive sounds (footsteps and gunshots), DDSP tends to rely heavily on its harmonic synthesizer, with very audible
-            harmonic artifacts. This is because we set the number of harmonics for the harmonic synthesizer as 100, for unity purposes. 
-            The decoder by itself doesn't learn to attenuate the harmonic synthesizer very well with this structure. Our approach could synthesize inharmonic 
-            sounds easily with an indicative harmonic attentuator. Further, our approach seems to synthesize impulsive sounds with sharper attacks. This could
-            be seen in gunshot sounds which contain many fast repetitive impulses. 
-            </p>
-        </div>
 
-
-
-    <hr>
-
-
-    <h1 class="section-title">Voice-to-SFX timbre transfer</h2>
-        <div class="section">
-            <p>Our model is capable of performing timbre transfer from out-of-domain sounds. We use voice as guiding sounds to showcase this. We extract the fundamental frequency
-                and amplitude contours from the voice. We feed in a self-determined latent vector z to variate the timbres. We set z=0 for the entire time frames
-                as a reference. We then change the value of z from 2 or 3 seconds of time to show how varying the latent variable could contribute to timbre changes.
-                </p>
-            </div>
-
-    <h2 class="section-title">Gunshots</h2>
-
-    <div class="column-section">
-        <!-- Column 1 -->
+        <!-- Column 4 -->
         <div class="column">
-            <h4 class="title is-4">Voice</h4>
+            <h4 class="title is-4">VAE-EnCodec<sub>16</sub></h4>
             <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesized/Gunshots/voice_explosion_1.wav' type='audio/wav'>
+                <source src='Reconstruction/Gunshots/DDSP-VAE_037.wav' type='audio/wav'>
             </audio>
             <figure class="image">
-                <img src="Presentation demo/synthesized/Gunshots/voice_explosion_1.png" alt="Description 1">
+                <img src="Reconstruction/Gunshots/ddsp-vae-037.png" alt="Description 3">
+            </figure>
+            <h4 class="title is-4">VAE-EnCodec<sub>16</sub></h4>
+            <audio preload='metadata' controls>
+                <source src='Reconstruction/Gunshots/DDSP-VAE_048.wav' type='audio/wav'>
+            </audio>
+            <figure class="image">
+                <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="Description 3">
+            </figure>
+            <h4 class="title is-4">VAE-EnCodec<sub>16</sub></h4>
+            <audio preload='metadata' controls>
+                <source src='Reconstruction/Gunshots/DDSP-VAE_048.wav' type='audio/wav'>
+            </audio>
+            <figure class="image">
+                <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="Description 3">
             </figure>
         </div>
-        
-    
-        <!-- Column 2 -->
+
+        <!-- Column 5 -->
         <div class="column">
-            <h4 class="title is-4">z=0</h4>
+            <h4 class="title is-4">VAE-EnCodec<sub>128</sub></h4>
             <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesized/Gunshots/gunshots-1-300.wav' type='audio/wav'>
+                <source src='Reconstruction/Gunshots/DDSP-VAE_037.wav' type='audio/wav'>
             </audio>
             <figure class="image">
-                <img src="Presentation demo/synthesized/Gunshots/gunshots-1-300.png" alt="Description 2">
+                <img src="Reconstruction/Gunshots/ddsp-vae-037.png" alt="Description 3">
             </figure>
-        </div>
-    
-        <!-- Column 3 -->
-        <div class="column">
-            <h4 class="title is-4">z=3 after 2s</h4>
+            <h4 class="title is-4">VAE-EnCodec<sub>128</sub></h4>
             <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesized/Gunshots/gunshots-1-300-0.wav' type='audio/wav'>
+                <source src='Reconstruction/Gunshots/DDSP-VAE_048.wav' type='audio/wav'>
             </audio>
             <figure class="image">
-                <img src="Presentation demo/synthesized/Gunshots/gunshots-1-300-0.png" alt="Description 3">
+                <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="Description 3">
+            </figure>
+            <h4 class="title is-4">VAE-EnCodec<sub>128</sub></h4>
+            <audio preload='metadata' controls>
+                <source src='Reconstruction/Gunshots/DDSP-VAE_048.wav' type='audio/wav'>
+            </audio>
+            <figure class="image">
+                <img src="Reconstruction/Gunshots/ddsp-vae-048.png" alt="Description 3">
             </figure>
         </div>
     </div>
 
 
-    <h2 class="section-title">Footsteps</h2>
-
-    <div class="column-section">
-        <!-- Column 1 -->
-        <div class="column">
-            <h4 class="title is-4">Voice</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesized/Footsteps/voice-footstep-1.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/synthesized/Footsteps/voice-footstep-1.png" alt="Description 1">
-            </figure>
-        </div>
-        
-    
-        <!-- Column 2 -->
-        <div class="column">
-            <h4 class="title is-4">z=0</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesized/Footsteps/footsteps-1-100.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/synthesized/Footsteps/footsteps-1-100.png" alt="Description 2">
-            </figure>
-        </div>
-    
-        <!-- Column 3 -->
-        <div class="column">
-            <h4 class="title is-4">z=3 after 2s</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesized/Footsteps/footsteps-1-0-500.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/synthesized/Footsteps/footsteps-1-0-500.png" alt="Description 3">
-            </figure>
-        </div>
-    </div>
-
-    <div class="column-section">
-        <!-- Column 1 -->
-        <div class="column">
-            <h4 class="title is-4">Voice</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesized/Footsteps/voice-footstep-5.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/synthesized/Footsteps/voice-footstep-5.png" alt="Description 1">
-            </figure>
-        </div>
-        
-    
-        <!-- Column 2 -->
-        <div class="column">
-            <h4 class="title is-4">z=0</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesized/Footsteps/footsteps-5-0.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/synthesized/Footsteps/footsteps-5-0.png" alt="Description 2">
-            </figure>
-        </div>
-    
-        <!-- Column 3 -->
-        <div class="column">
-            <h4 class="title is-4">z=3 after 2s</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesized/Footsteps/footsteps-5-0-500.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/synthesized/Footsteps/footsteps-5-0-500.png" alt="Description 3">
-            </figure>
-        </div>
-    </div>
-
-    <div class="column-section">
-        <!-- Column 1 -->
-        <div class="column">
-            <h4 class="title is-4">Voice</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesized/Footsteps/voice-footstep-6.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/synthesized/Footsteps/voice-footstep-6.png" alt="Description 1">
-            </figure>
-        </div>
-        
-    
-        <!-- Column 2 -->
-        <div class="column">
-            <h4 class="title is-4">z=0</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesized/Footsteps/footsteps-6-0.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/synthesized/Footsteps/footsteps-6-0.png" alt="Description 2">
-            </figure>
-        </div>
-    
-        <!-- Column 3 -->
-        <div class="column">
-            <h4 class="title is-4">z=3 after 2s</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesized/Footsteps/footsteps-6-0-500.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/synthesized/Footsteps/footsteps-6-0-500.png" alt="Description 3">
-            </figure>
-        </div>
-    </div>
-
-    <h2 class="section-title">Motors</h2>
-    <div class="column-section">
-        <!-- Column 1 -->
-        <div class="column">
-            <h4 class="title is-4">Voice</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesize_with_z/motors/voice_1.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/synthesize_with_z/motors/voice.png" alt="Description 1">
-            </figure>
-        </div>
-        
-    
-        <!-- Column 2 -->
-        <div class="column">
-            <h4 class="title is-4">z=0</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesize_with_z/motors/z-unchanged.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/synthesize_with_z/motors/z-unchanged.png" alt="Description 2">
-            </figure>
-        </div>
-    
-        <!-- Column 3 -->
-        <div class="column">
-            <h4 class="title is-4">z=3 after 2s</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesize_with_z/motors/z_change_2s.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/synthesize_with_z/motors/z_change_2s.png" alt="Description 3">
-            </figure>
-        </div>
-    </div>
-
-    <div class="column-section">
-        <!-- Column 1 -->
-        <div class="column">
-            <h4 class="title is-4">Voice</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/voice/voice_motor_2.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/voice/voice_motor_2.png" alt="Description 1">
-            </figure>
-        </div>
-        
-    
-        <!-- Column 2 -->
-        <div class="column">
-            <h4 class="title is-4">z=0</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesized/Motors/motor_7.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/synthesized/Motors/motor_7.png" alt="Description 2">
-            </figure>
-        </div>
-    
-        <!-- Column 3 -->
-        <div class="column">
-            <h4 class="title is-4">z=3 after 3s</h4>
-            <audio preload='metadata' controls>
-                <source src='Presentation demo/synthesized/Motors/motor_7_200-300-3.wav' type='audio/wav'>
-            </audio>
-            <figure class="image">
-                <img src="Presentation demo/synthesized/Motors/motor_7_200-300-3.png" alt="Description 3">
-            </figure>
-        </div>
-    </div>
+    <h1 class="section-title">Latent Space Navigation</h1>
 
     <div class="section">
-        <p>
-            From the spectrogram we could see a clear difference when we variate the value of z from a time frame. 
-            This shows that our latent vector is able to achieve time-varying timbre control over the generated sounds. When changing it
-            from a certain time frame, it changes its spectral characteristics immediately without creating any distorted glitch 
-            in the joint areas. 
-        </p>
-    </div>
+        <p>Here we show results from out investigations into latent space navigation</p>
+        </div>
 
+    <div class="column-section">
+      <!-- Column 1 -->
+      <div class="column">
+          <h4 class="title is-4">VAE-EnCodec<sub>16</sub></h4>
+          <audio preload='metadata' controls>
+              <source src='samples/reconstructions/seaWaves_dataset/original.wav' type='audio/wav'>
+          </audio>
+          <figure class="image">
+              <img src="images/interpolations/vae-encodec_waves.png" alt="Description 1">
+          </figure>
+          <h4 class="title is-4">VAE-NoiseBand</h4>
+          <audio preload='metadata' controls>
+              <source src='samples/reconstructions/rain_dataset/original.wav' type='audio/wav'>
+          </audio>
+          <figure class="image">
+              <img src="images/interpolations/filterbank_waves.png" alt="Description 1">
+          </figure>
+      </div>
+      
+  
+      <!-- Column 2 -->
+      <div class="column">
+          <h4 class="title is-4">VAE-EnCodec<sub>16</sub></h4>
+          <audio preload='metadata' controls>
+              <source src='samples/reconstructions/seaWaves_dataset/ddsp_recon.wav' type='audio/wav'>
+          </audio>
+          <figure class="image">
+              <img src="images/interpolations/vae-encodec_rain.png" alt="Description 2">
+          </figure>
+          <h4 class="title is-4">VAE-NoiseBand</h4>
+          <audio preload='metadata' controls>
+              <source src='samples/reconstructions/rain_dataset/ddsp_recon.wav' type='audio/wav'>
+          </audio>
+          <figure class="image">
+              <img src="images/interpolations/filterbank_rain.png" alt="Description 2">
+          </figure>
+      </div>
+  
+      <!-- Column 3 -->
+      <div class="column">
+          <h4 class="title is-4">VAE-EnCodec<sub>16</sub></h4>
+          <audio preload='metadata' controls>
+              <source src='samples/reconstructions/seaWaves_dataset/noisebandnet_recon.wav' type='audio/wav'>
+          </audio>
+          <figure class="image">
+              <img src="images/interpolations/vae-encodec_thunder.png" alt="Description 3">
+          </figure>
+          <h4 class="title is-4">VAE-NoiseBand</h4>
+          <audio preload='metadata' controls>
+              <source src='samples/reconstructions/rain_dataset/noisebandnet_recon.wav' type='audio/wav'>
+          </audio>
+          <figure class="image">
+              <img src="images/interpolations/filterbank_thunder.png" alt="Description 3">
+          </figure>
+      </div>
+  </div>
 
 
     <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h4 class="title">BibTeX</h4>
-      <pre><code>@inproceedings{liu2023ddspsfx,
-        title={DDSP-SFX: Acoustically-guided sound effects generation with differentiable digital signal processing}, 
-        Conference={Digital Audio Effects Conference 2024},
-        year={2024},
-        Pages={216-221},
-  }</code></pre>
+      <pre><code>goes here</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -616,7 +390,7 @@ In this paper we evaluate and investigate the audio texture synthesis capabiliti
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/audio-samples/audio-samples.github.io" target="_blank">Academic Project Page Template</a>.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
